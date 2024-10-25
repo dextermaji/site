@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive WhatsApp Status Screen</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #111;
+            color: #fff;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .image-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .image-box:hover {
+            transform: scale(1.05);
+        }
+        .image-box:hover img {
+            transform: scale(1.1);
+        }
+        .info {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            font-size: 1.1em;
+            animation: slideUp 0.4s ease forwards;
+            transform: translateY(100%);
+        }
+        .image-box:hover .info {
+            transform: translateY(0);
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Image 1 -->
+        <a href="https://wa.me/0750657563?text=I'm%20interested%20in%20Product%201" target="_blank">
+            <div class="image-box">
+                <img src="1.jpeg" alt="Image 1">
+                <div class="info">
+                    <h3>Product 1</h3>
+                    <p>Click to inquire on WhatsApp</p>
+                </div>
+            </div>
+        </a>
+        <!-- Image 2 -->
+        <a href="https://wa.me/0750657563?text=I'm%20interested%20in%20Product%202" target="_blank">
+            <div class="image-box">
+                <img src="2.jpeg" alt="Image 2">
+                <div class="info">
+                    <h3>Product 2</h3>
+                    <p>Click to inquire on WhatsApp</p>
+                </div>
+            </div>
+        </a>
+        <!-- Image 3 -->
+        <a href="https://wa.me/0750657563?text=I'm%20interested%20in%20Product%203" target="_blank">
+            <div class="image-box">
+                <img src="3.jpeg" alt="Image 3">
+                <div class="info">
+                    <h3>Product 3</h3>
+                    <p>Click to inquire on WhatsApp</p>
+                </div>
+            </div>
+        </a>
+        <!-- Image 4 -->
+        <a href="https://wa.me/0750657563?text=I'm%20interested%20in%20Product%204" target="_blank">
+            <div class="image-box">
+                <img src="4.jpeg" alt="Image 4">
+                <div class="info">
+                    <h3>Product 4</h3>
+                    <p>Click to inquire on WhatsApp</p>
+                </div>
+            </div>
+        </a>
+        <!-- Image 5 -->
+        <a href="https://wa.me/0750657563?text=I'm%20interested%20in%20Product%205" target="_blank">
+            <div class="image-box">
+                <img src="5.jpeg" alt="Image 5">
+                <div class="info">
+                    <h3>Product 5</h3>
+                    <p>Click to inquire on WhatsApp</p>
+                </div>
+            </div>
+        </a>
+        <!-- Image 6 -->
+        <a href="https://wa.me/0750657563?text=I'm%20interested%20in%20Product%206" target="_blank">
+            <div class="image-box">
+                <img src="6.jpeg" alt="Image 6">
+                <div class="info">
+                    <h3>Product 6</h3>
+                    <p>Click to inquire on WhatsApp</p>
+                </div>
+            </div>
+        </a>
+        <!-- Image 7 -->
+        <a href="https://wa.me/0750657563?text=I'm%20interested%20in%20Product%207" target="_blank">
+            <div class="image-box">
+                <img src="7.jpeg" alt="Image 7">
+                <div class="info">
+                    <h3>Product 7</h3>
+                    <p>Click to inquire on WhatsApp</p>
+                </div>
+            </div>
+        </a>
+        <!-- Image 8 -->
+        <a href="https://wa.me/0750657563?text=I'm%20interested%20in%20Product%208" target="_blank">
+            <div class="image-box">
+                <img src="8.jpeg" alt="Image 8">
+                <div class="info">
+                    <h3>Product 8</h3>
+                    <p>Click to inquire on WhatsApp</p>
+                </div>
+            </div>
+        </a>
+        <!-- Image 9 -->
+        <a href="https://wa.me/0750657563?text=I'm%20interested%20in%20Product%209" target="_blank">
+            <div class="image-box">
+                <img src="9.jpeg" alt="Image 9">
+                <div class="info">
+                    <h3>Product 9</h3>
+                    <p>Click to inquire on WhatsApp</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

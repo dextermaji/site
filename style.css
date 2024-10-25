@@ -1,0 +1,65 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+    color: #fff;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column layout */
+    gap: 20px; /* Adds space between images */
+    max-width: 1200px;
+    padding: 20px;
+}
+.image-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth scaling animation */
+}
+.image-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.image-box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+.image-box:hover img {
+    transform: scale(1.1); /* Slightly zooms image on hover */
+}
+.info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+    animation: slideUp 0.4s ease forwards; /* Slide-up animation */
+    transform: translateY(100%); /* Hidden by default */
+}
+.image-box:hover .info {
+    transform: translateY(0); /* Slides up the info on hover */
+}
+/* Slide-up keyframe animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
